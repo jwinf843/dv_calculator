@@ -30,9 +30,29 @@ def calculate_interplanetary_transfer(p_start, p_finish):
     V2 = (2 * π * R2) / P2
     
     # STEP 7
-    Vp = (2 * π * a_transfer) / ()
+    top = (2 * π * a_transfer) / p_transfer
+    bottom = sqrt(2 * a_transfer / R1) - 1
+    Vp = top * bottom
     
+    # STEP 8
+    ΔV1 = Vp - V1
+    
+    # STEP 9
+    top = (2 * π * a_transfer) / p_transfer
+    bottom = sqrt(2 * a_transfer / R2) - 2
+    Va = top * bottom
+    
+    # STEP 10
+    ΔV2 = V2 - Va
+    
+    # FINAL
+    dv = ΔV1 + ΔV2
+    
+    print(Vp)
     print(π)
     
+    return dv
+    
 
-calculate_interplanetary_transfer(kerbin, eve)
+k_e = calculate_interplanetary_transfer(kerbin, eve)
+print(k_e)
