@@ -16,7 +16,7 @@ gilly = {
     'moons': True,
     'low orbit' = 10
     'atmo' = False
-    'mass' = '	1.2420363×10^17' 
+    'mass' = '1.2420363×10^17' 
 }
 
 eve = {
