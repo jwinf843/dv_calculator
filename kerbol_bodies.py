@@ -5,8 +5,8 @@ kerbol = {
     'low orbit': 610,
     'atmo': True,
     'mass': '1.7565459×10^28',
-    'ap': 261600000,
-    'pe': 261600000,
+    'ap': 261600,
+    'pe': 261600,
     'period': None
 }
 

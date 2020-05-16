@@ -1,6 +1,15 @@
 from kerbol_bodies import *
+from solar_bodies import *
 from math import pi as π
 from math import sqrt
+
+def number_fudger(data, reality):
+    """A function to determine if the data is within 1% margin of error with reality"""
+    reality_up = reality + (reality * 0.001)
+    reality_down = reality - (reality * 0.001)
+    
+    if reality_up > data > reality_down:
+        return True
 
 def calculate_interplanetary_transfer(p_start, p_finish): 
     """Calculate the dv required for a Hohmann transfer from start to finish
@@ -54,5 +63,5 @@ def calculate_interplanetary_transfer(p_start, p_finish):
     return dv
     
 
-k_e = calculate_interplanetary_transfer(kerbin, eve)
+k_e = calculate_interplanetary_transfer(earth, mars)
 print(k_e)
