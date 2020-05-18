@@ -1,3 +1,6 @@
+GM_sol_string = '1.327 x (10^11 km³/s²)'
+GM_sol = 1.327 * 10 ** 11
+
 earth = {
     'moons': 'Luna',
     'low orbit': 10,

@@ -1,3 +1,5 @@
+<img src="https://www.jpl.nasa.gov/edu/images/activities/launch_window.gif">
+
 # STEP 1 - Find the distance of the target planets from their sun
  - Use distance in kilometers
 
@@ -41,6 +43,8 @@ V(perihelion) = (2π x a(transfer) / P(transfer) ) x √( (2a(transfer) / R1) - 
 
 # STEP 8 - Find the change in velocity required at the start
  - This is the amount of dv required to enter the transfer orbit
+ 
+<img src="https://ai-solutions.com/_freeflyeruniversityguide/hohmanndiagram.png" width="300" height="300">
  
 ΔV1 = V(perihelion) - V1 
 

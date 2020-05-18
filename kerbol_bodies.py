@@ -1,5 +1,5 @@
-GM = '1.172×10^9 km^3/s^2 (cubic kilometers per second squared)'
-
+GM_kerbol_string = '1.172×10^9 km^3/s^2 (cubic kilometers per second squared)'
+GM_kerbol = 1.172 * 10 ** 9
 
 kerbol = {
     'moons': None,
@@ -171,4 +171,4 @@ eeloo = {
     'period': 156992048,
 }
 
-bodies = [kerbol, moho, eve, kerbin, duna, dres, jool, eeloo]
+kerbol_bodies = [kerbol, moho, eve, kerbin, duna, dres, jool, eeloo]
