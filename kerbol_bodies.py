@@ -1,4 +1,5 @@
-GM = 1.172 * (10 ** 18)
+GM = '1.172×10^9 km^3/s^2 (cubic kilometers per second squared)'
+
 
 kerbol = {
     'moons': None,
