@@ -67,4 +67,19 @@ def find_target_velocities(p_start, p_finish):
     
     return output
     
+def find_transfer_velocity(p_start, p_finish):
+    a_transfer = find_transfer_orbit(p_start, p_finish)
+    p_transfer = find_transfer_period(p_start, p_finish)
+    
+    top_left = 2 * π * a_transfer
+    left = top_left / p_transfer
+    
+    top_right = 2 * a_transfer
+    
+def find_insertion_velocity(p_start, p_finish):
+#     planet_velocities = 
+#     vp_data = find_target_velocities(p_start, p_finish)
+    
+    
+    
     
