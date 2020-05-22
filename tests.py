@@ -67,3 +67,15 @@ def test_4_target_velocities():
     assert number_fudger(results['V2'], 24.007)
     #29.78km/s and 24.007km/s are taken from the wiki pages for Earth and Mars
     
+    
+# STEP 7
+def test_5_transfer_velocity():
+    """
+    Calculate the velocity of the transfer orbit at periapsis
+    """
+    
+    results = find_transfer_velocity(earth, mars)
+    
+    assert number_fudger(results, 32.731)
+    # 32,731m/s taken from http://www.projectrho.com/public_html/rocket/mission.php#id--Hohmann_Transfer_Orbits 
+    # Check EXAMPLE -> Doing the Math -> Velocity_s

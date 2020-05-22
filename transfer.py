@@ -70,15 +70,29 @@ def find_target_velocities(p_start, p_finish):
 def find_transfer_velocity(p_start, p_finish):
     a_transfer = find_transfer_orbit(p_start, p_finish)
     p_transfer = find_transfer_period(p_start, p_finish)
+    data_set = find_semimajor_axis(p_start, p_finish)
+    R1 = data_set['SMA Start']
     
     top_left = 2 * π * a_transfer
     left = top_left / p_transfer
     
     top_right = 2 * a_transfer
+    right_inside = top_right / R1
+    right_inside -= 1
+    right = sqrt(right_inside)
+    
+    v_periapsis = left * right
+    
+    return v_periapsis
     
 def find_insertion_velocity(p_start, p_finish):
 #     planet_velocities = 
 #     vp_data = find_target_velocities(p_start, p_finish)
+
+    pass
+
+data = find_transfer_velocity(earth, mars)
+print(data)
     
     
     
