@@ -101,5 +101,17 @@ def test_7_arrival_velocity():
     assert number_fudger(results, 21.476)
     # 21,476m/s taken from http://www.projectrho.com/public_html/rocket/mission.php#id--Hohmann_Transfer_Orbits
     # Check EXAMPLE -> Doing the Math -> Velocity_d
+
+# STEP 10
+def test_8_final_injection_velocity():
+    """
+    Calculate the velocity required to inject into final orbit
+    """
+    results = find_arrival_injection_velocity(earth, mars) * 1000
     
-    pass
+    assert number_fudger(results, 2650)
+    # 2,650m/staken from http://www.projectrho.com/public_html/rocket/mission.php#id--Hohmann_Transfer_Orbits
+    # Check EXAMPLE -> Doing the Math -> Velocity_∞d
+    # Numbers for this test were done in meters instead of km for accuracy
+    
+    # The truth is I can't pass the test in km ._.

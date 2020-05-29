@@ -109,6 +109,17 @@ def find_velocity_at_destination(p_start, p_finish):
     inside_right -= 1
     right = sqrt(inside_right)
     
-    v_aphelion = left * right
+    v_apoapsis = left * right
     
-    return v_aphelion
+    return v_apoapsis
+
+def find_arrival_injection_velocity(p_start, p_finish):
+    vp_data = find_target_velocities(p_start, p_finish)
+    V2 = vp_data['V2']
+    v_apoapsis = find_velocity_at_destination(p_start, p_finish)
+    
+    ΔV2 = V2 - v_apoapsis
+    
+    return ΔV2
+
+

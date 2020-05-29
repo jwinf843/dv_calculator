@@ -55,7 +55,7 @@ V(aphelion) = (2π x a(transfer) / P(transfer) ) x √( (2a(transfer) / R2) - 1)
 
 # STEP 10 - Find the change in velocity required to inject from the transfer orbit into orbit around the target planet
 
-ΔV2 = V2- V(aphelion)
+ΔV2 = V2 - V(aphelion)
 
 # STEP 11 - Add ΔV1 and ΔV2 for your total Δv requirement
 
