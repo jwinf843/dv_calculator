@@ -79,3 +79,27 @@ def test_5_transfer_velocity():
     assert number_fudger(results, 32.731)
     # 32,731m/s taken from http://www.projectrho.com/public_html/rocket/mission.php#id--Hohmann_Transfer_Orbits 
     # Check EXAMPLE -> Doing the Math -> Velocity_s
+    
+# STEP 8
+def test_6_insertion_velocity():
+    """
+    Calculate the change in velocity required to eject from p_start
+    """
+    results = find_insertion_velocity(earth, mars)
+    
+    assert number_fudger(results, 2.946)
+    # 2,946m/s taken from http://www.projectrho.com/public_html/rocket/mission.php#id--Hohmann_Transfer_Orbits 
+    # Check EXAMPLE -> Doing the Math -> Velocity_∞s
+    
+# STEP 9
+def test_7_arrival_velocity():
+    """
+    Calculate the velocity at arrival
+    """
+    results = find_velocity_at_destination(earth, mars)
+    
+    assert number_fudger(results, 21.476)
+    # 21,476m/s taken from http://www.projectrho.com/public_html/rocket/mission.php#id--Hohmann_Transfer_Orbits
+    # Check EXAMPLE -> Doing the Math -> Velocity_d
+    
+    pass
