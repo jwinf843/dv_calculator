@@ -112,6 +112,3 @@ def find_velocity_at_destination(p_start, p_finish):
     v_aphelion = left * right
     
     return v_aphelion
-
-data = find_velocity_at_destination(earth, mars)
-print(data)
